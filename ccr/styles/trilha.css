@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*, html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #cc47d8, #a333c3, #7920ad, #4e0d97, #160081);
+}
+a:link {
+    color:white;
+    text-decoration: none;
+  }
+  a:visited {
+    
+    color:white;
+  }
+  
+
+.user-section {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    min-height: 100vh;
+    position: fixed;
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+}
+
+.user-section .user-img {
+    width: 150px;
+    height: 150px;
+    background-image: url("https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.user-name {
+    margin-bottom: 0;
+}
+
+.user-area {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #3f3f3f;
+}
+
+.user-location {
+    margin: 0;
+    margin-top: 5px;
+    color: #6f6f6f;
+}
+
+.user-trail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.user-desc {
+    padding: 25px;
+}
+
+.profile-score {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.playlist {
+    margin-left: 40%;
+    padding: 100px;
+}
+
+.playlist-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-btn {
+    background: #c401ff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.playlist h3 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.playlist h4 {
+    font-weight: 300;
+    color: #dfdfdf;
+    margin-bottom: 25px;
+}
+
+.video-card {
+    padding: 15px 25px;
+    color: #333;
+    border-radius: 15px;
+    display: flex;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.video-card img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.video-card .card-info  {
+    padding: 5px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-link {
+    color: #57d9dd;
+}
+
+.new-content {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.nova-trilha form {
+    padding: 25px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nova-trilha form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    min-height: 300px;
+}

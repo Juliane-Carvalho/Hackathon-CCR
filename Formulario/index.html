@@ -1,0 +1,119 @@
+<!DOCTYPE html>  <!--tipo de documento-->
+<html lang="en">    <!--idioma-->
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Formulário de Cadastro Dinda</title>
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo"><strong>CADASTRO</strong></h1>
+        <p id="subtitulo">Preencha suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required> 
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+    
+            <div class="campo">
+                <label for="telefone"><strong>Telefone</strong></label>
+                <input type="text" name="telefone" id="telefone" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+                <div class="campo">
+                    <label for="idade"><strong>Data de Nascimento</strong></label>
+                    <input type="date" name="idade" id="idade" required>
+                </div>
+                <div class="campo">
+                    <label id="sexo"><strong>Sexo</strong></label>
+                    <select id="sexo">
+                        <option selected disabled value=""> Selecione</option>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                    </select>
+                </div>
+        </fieldset>
+        
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="endereço"><strong>Endereço</strong></label>
+                <input type="text" name="endereço" id="endereço" required>
+            </div>
+            <div class="campo">
+                <label for="cep"><strong>CEP</strong></label>
+                <input type="text" name="cep" id="cep" required>
+            </div>
+    
+        </fieldset>
+        
+        <div class="campo">
+            <label><strong>Formação</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Ensino Fundamental
+            </label>
+
+            <label>
+                <input type="radio" name="devweb" value="backend">Ensino Médio
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Superior
+            </label>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="username"><strong>Username</strong></label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="campo">
+                <label for="senha"><strong>Senha</strong></label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Áreas de Interesse:</strong></label><br><br>
+
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnolofia1">Artes</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnolofia2">Ciências</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                <label for="tecnolofia3">Humanidades</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnolofia4">Saúde</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnolofia5">Tecnologia</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Mini-bio</strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        
+        <button type="submit" class="botao">Concluído</button>
+    </form>
+</body>
+</html>

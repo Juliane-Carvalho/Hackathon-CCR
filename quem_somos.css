@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+a:link {
+    color:white;
+    text-decoration: none;
+  }
+
+
+  a:visited {
+    
+    color:white;
+  }
+  
+  a:hover {
+    color:violet;
+  }
+
+
+/*Botão*/
+.botao{
+    background-color: #d42ca2;
+    color:white;
+    text-transform: uppercase;
+    padding: 8px 60px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background: #f6a8fd;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    background-color: #000;
+    color:white;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+}
+
+#navbar .navbar-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#navbar .navbar-container .logo {
+    height: 40px;
+    width: auto;
+}
+
+#navbar .navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    
+
+}
+
+#navbar .navbar-container ul li{
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+#navbar .navbar-container ul li:nth-child(3){
+    border-right: 1px solid white;
+}
+
+
+/* card */
+
+#card{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background: url('https://i.imgur.com/lW1cYvc.png')center center/cover;
+    background-color: rgba(0,0,0,0.01);
+    background-blend-mode: color;
+    
+}
+
+#card .card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 5px 0px #e2e2e2;
+    
+}
+
+#card .card-container h2{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#card .card-container p{
+    /*margin: 15px 0;*/
+    font-size: 1.1rem;
+    padding: 0 100px;
+    width: min(90vw, 800px);
+    margin: auto;
+    text-align: center;
+}
